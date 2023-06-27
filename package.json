@@ -1,0 +1,36 @@
+{
+  "name": "jenkins-mini-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "magic-lint --staged --eslint --stylelint --prettier --fix",
+      "commit-msg": "magic-lint --commit"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/answer33/jenkins-mini-ci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/answer33/jenkins-mini-ci/issues"
+  },
+  "homepage": "https://github.com/answer33/jenkins-mini-ci#readme",
+  "dependencies": {
+    "miniprogram-ci": "^1.0.30",
+    "simple-git": "^3.19.1"
+  },
+  "devDependencies": {
+    "eslint-config-magic": "^1.2.0",
+    "magic-lint": "^1.2.0",
+    "typescript": "^3.9.3"
+  }
+}

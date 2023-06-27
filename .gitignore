@@ -1,0 +1,9 @@
+# node_module
+/node_modules
+lib
+repo
+npm-debug.log
+.idea
+package-lock.json
+yarn.lock
+.vscode
